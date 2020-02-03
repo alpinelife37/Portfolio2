@@ -1,0 +1,350 @@
+/* global css */
+
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+  font-family: "Julius Sans One", sans-serif;
+}
+
+body {
+  position: relative;
+  background-image: url("../images/main.JPG");
+  background-size: cover;
+  /* background: rgb(52,58,64); */
+}
+
+.no-display {
+  display: none;
+}
+
+/* begin css for navbar */
+
+nav {
+  border-bottom: solid rgb(185, 241, 255) 1px;
+}
+
+.navbar-brand {
+  color: rgb(185, 241, 255) !important;
+}
+
+.navbar-brand:hover {
+  color: whitesmoke !important;
+}
+
+.navbar-brand:active {
+  color: whitesmoke !important;
+}
+
+/* end css for navbar */
+
+/* begin css for splash page */
+
+splashpage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  font-family: "Julius Sans One", sans-serif;
+  color: rgb(185, 241, 255);
+  overflow: hidden;
+}
+
+.splash-canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  /* background-image: url("../images/IMG_0276\ copy.jpg"); */
+  background-image: url("../images/splash.JPG");
+  background-size: cover;
+}
+
+splashpage div {
+  text-shadow: 0 0 50px black;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 2rem;
+  border: 2px rgb(185, 241, 255) solid;
+  border-radius: 4px;
+  background-color: rgba(128, 128, 128, 0.192);
+  animation-name: fadein;
+  animation-duration: 3s;
+}
+
+#enter {
+  color: rgb(185, 241, 255) !important;
+  font-size: 2rem;
+  border: 2px rgb(185, 241, 255) solid;
+  border-radius: 1rem;
+}
+
+#enter:hover {
+  text-decoration: none;
+  color: whitesmoke !important;
+  border: whitesmoke solid;
+}
+
+#enter:hover ~ .title {
+  color: whitesmoke !important;
+}
+
+#enter:active {
+  color: whitesmoke !important;
+  border: 2px whitesmoke solid;
+}
+
+#enter:active ~ .title {
+  color: whitesmoke !important;
+}
+
+/* end css for splash page */
+
+portfolio {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* begin css for about page */
+
+aboutpage {
+  color: rgb(185, 241, 255);
+  text-shadow: 0, 0, 50px black;
+  width: 100%;
+  height: 100%;
+  background: rgb(37, 37, 37);
+}
+
+main {
+  margin: 2rem;
+  padding: 2rem;
+  background: rgba(52, 58, 64, 0.5);
+  border: 2px solid rgb(185, 241, 255);
+  border-radius: 4px;
+  contain: content;
+}
+
+main a {
+  color: white !important;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.proficiencies {
+  color: rgb(185, 241, 255);
+  font-size: 1rem;
+}
+
+.summary {
+  color: white;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.reference-link {
+  text-shadow: 0 0 5px black;
+  padding: 3px;
+  text-decoration: none !important;
+  background-color: rgba(0, 0, 0, 0.199);
+  border-radius: 7px;
+  transition: 0.5s;
+}
+
+.reference-link:hover {
+  color: whitesmoke !important;
+}
+
+.logo {
+  width: 1rem;
+}
+
+#profile-pic {
+  margin: 0 2rem 0 0;
+  float: left;
+  width: 40%;
+  border-radius: 0.5rem;
+  border: 2px solid rgb(185, 241, 255);
+}
+
+/* end css for about page */
+
+/* begin css for portfolio page */
+
+.carousel-item {
+  position: relative;
+}
+
+.portfolio-tag {
+  position: absolute;
+  top: 38%;
+  width: 100%;
+  text-align: center;
+  color: rgb(185, 241, 255) !important;
+  background: rgba(0, 0, 0, 0.671);
+  padding: 1rem 0 1rem 0;
+}
+
+.portfolio-tag a {
+  font-family: "Julius Sans One", sans-serif;
+  color: rgb(185, 241, 255) !important;
+  display: block;
+}
+
+.portfolio-tag a:hover {
+  text-decoration: none;
+  color: whitesmoke !important;
+}
+
+.portfolio-tag a:active {
+  color: whitesmoke !important;
+}
+
+.portfolio-tag p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: white;
+  cursor: default;
+}
+
+.git-link {
+  font-size: 1rem;
+}
+
+.carousel-item img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.mobile-portfolio-item {
+  position: relative;
+}
+
+.mobile-portfolio-item img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* end css for portfolio page */
+
+/* begin css for contact page */
+
+contactpage {
+  text-shadow: 0, 0, 50px black;
+}
+
+contactpage a {
+  color: rgb(185, 241, 255) !important;
+}
+
+contactpage a:hover {
+  text-decoration: none;
+  color: whitesmoke !important;
+}
+
+contactpage a:active {
+  color: whitesmoke !important;
+}
+
+.contact-main {
+  color: rgb(185, 241, 255) !important;
+  padding-right: 10%;
+  padding-left: 10%;
+  text-align: center;
+}
+
+.contact-main div {
+  background: rgba(52, 58, 64, 0.5);
+  border: 2px solid rgb(185, 241, 255);
+  margin-top: 5rem !important;
+  padding: 2rem;
+  margin: auto;
+  border: 1px solid rgb(185, 241, 255);
+  border-radius: 4px;
+  overflow-wrap: break-word;
+}
+
+.contact-main a {
+  color: white !important;
+}
+
+/* begin css for contact page */
+
+.fadeout {
+  animation-name: fade1;
+  animation-duration: 2s;
+}
+
+.fadein {
+  animation-name: fade2;
+  animation-duration: 2s;
+  animation-direction: reverse;
+  opacity: 1;
+}
+
+@keyframes fade1 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade2 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    padding: 300px;
+  }
+  100% {
+    opacity: 1;
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #profile-pic {
+    width: 100%;
+  }
+  main {
+    text-align: center;
+  }
+  .mobile-portfolio {
+    display: inline-block;
+  }
+  .portfolio-tag {
+    top: 33%;
+  }
+  .carousel {
+    display: none;
+  }
+}
+
+body {
+  color: 255, 217, 0, 0.65;
+}
