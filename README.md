@@ -4,7 +4,7 @@
 
 ### DESCRIPTION
 
-My fully mobile-responsive portfolio. A single page site that preserves user location on reload.
+My professional portfolio. 
 
 ![Example profile](./assets/images/example1.png)
 [Deployed Link](https://alpinelife37.github.io/Portfolio2/)
